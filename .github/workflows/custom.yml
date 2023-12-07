@@ -1,0 +1,8 @@
+name custom
+on:push
+jobs:
+  main:
+    runs-on:ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: nbozhkov-ucl/test_action@main
